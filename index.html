@@ -11,32 +11,30 @@
 
 </head>
 <body>
-  <header class="logo-bar">
+  <header class="logo-bar-mobile">
     <img src="./images/logo.svg" />
   </header>
   <main class="container">
     <div class="hero-img"></div>
-
     <div class="content-wrap">
-      <h1 class="heading"><span class="heading-accent">We're</span><br />coming<br />soon</h1>
+      <div class="content-inner">
+        <header class="logo-bar">
+          <img src="./images/logo.svg" />
+        </header>
+        <h1 class="heading"><span class="heading-accent">We're</span><br />coming<br />soon</h1>
 
-      <div class="intro-text">Hello fellow shoppers! We're currently building our new fashion store. 
-        Add your email below to stay up-to-date with announcements and our launch deals.</div>
+        <div class="intro-text">Hello fellow shoppers! We're currently building our new fashion store. 
+          Add your email below to stay up-to-date with announcements and our launch deals.</div>
 
-      <form class="sign-up">
-        <input type="text" placeholder="Email Address" />
-        <button>
-          <img src="./images/icon-arrow.svg" />
-        </button>
-      </form>
+        <form class="sign-up" onsubmit="return validateForm()" name="form">
+          <input type="email" required placeholder="Email Address"  />
+          <button>
+            <img src="./images/icon-arrow.svg" />
+          </button>
+        </form>
+      </div>
     </div>
 </main>
   
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="https://www.frontendmentor.io/profile/ABaker14791">ABaker14791</a>.
-    </p>
-  </footer>
 </body>
 </html>

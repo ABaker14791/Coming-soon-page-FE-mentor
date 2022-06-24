@@ -19,9 +19,13 @@ footer {
     width: 100%;
 }
 
-.logo-bar {
+.logo-bar-mobile {
     padding: 40px 0;
     margin-left: 30px;
+}
+
+.logo-bar {
+    display: none;
 }
 
 .hero-img {
@@ -43,7 +47,7 @@ footer {
 
 .heading {
     font-size: 2.8rem;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: .5rem;
     text-transform: uppercase;
     line-height: 1.1;
@@ -71,15 +75,108 @@ footer {
     border-radius: 25px;
     border: 1px solid hsl(0, 36%, 70%);
     width: 100%;
+    outline: none;
+    font-size: 16px;
+}
+
+.sign-up input::placeholder {
+    color: hsl(0, 36%, 70%);
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .sign-up button {
     border-radius: 25px;
-    padding: 15px 25px;
+    padding: 15px 30px;
+    cursor: pointer;
     border: none;
     position: absolute;
     right: 0;
     top:0;
     bottom:0;
     background: linear-gradient(135deg,hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+}
+
+.sign-up button:hover {
+    box-shadow: 0px 10px 16px hsl(0, 36%, 70%);
+    background: linear-gradient(135deg,hsl(0, 79%, 94%),hsl(0, 80%, 86%));
+
+}
+
+@media (min-width: 800px) {
+    .container {
+        background-image: url(./images/bg-pattern-desktop.svg);
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: 65%;
+        display:flex;
+        flex-direction: row-reverse;
+        position: relative;
+        margin: 0;
+    }
+
+    .hero-img {
+        background-image: url('./images/hero-desktop.jpg');
+        width:40%;
+        height: 100vh;
+    }
+
+    .logo-bar {
+        margin-bottom: 80px;
+        width: 100%;
+        max-width: 520px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 120px;
+    }
+
+    .logo-bar-mobile {
+    display: none;
+    }
+
+    .content-wrap {
+
+        width: 60%;
+        height: 100%;
+        padding:0 0px;
+        margin-top: 0;
+    }
+
+    .content-inner {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .heading {
+       max-width: 520px;
+       text-align: left;
+       font-size: 4rem;
+       width: 100%;
+    }
+
+    .intro-text {
+        max-width: 520px; 
+        text-align: left;
+        margin: 40px 0 0px;
+    }
+
+    .sign-up {
+        max-width: 520px; 
+        text-align: left;
+    }
+
+    .sign-up input {
+        padding: 20px 45px;
+        border-radius: 45px;
+        border: 1px solid hsl(0, 36%, 70%);
+        width: 100%;
+    }
+
+    .sign-up button {
+        padding: 20px 45px;
+        border-radius: 45px;
+    }
 }
