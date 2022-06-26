@@ -26,9 +26,9 @@
         <div class="intro-text">Hello fellow shoppers! We're currently building our new fashion store. 
           Add your email below to stay up-to-date with announcements and our launch deals.</div>
 
-        <form class="sign-up" onsubmit="return validateForm()" name="form">
-          <input type="email" required placeholder="Email Address"  />
-          <button>
+        <form class="sign-up">
+          <input type="text" placeholder="Email Address" id="input" onClick="removeElement()" />
+          <button type="submit" onClick="checkEmail(event)">
             <img src="./images/icon-arrow.svg" />
           </button>
         </form>
@@ -36,5 +36,6 @@
     </div>
 </main>
   
+<script src="script.js"></script>
 </body>
 </html>
