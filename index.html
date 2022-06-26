@@ -11,16 +11,16 @@
 
 </head>
 <body>
-  <header class="logo-bar-mobile">
-    <img src="./images/logo.svg" />
-  </header>
+  <div class="logo-bar-mobile">
+    <img src="./images/logo.svg" alt="logo" />
+  </div>
   <main class="container">
     <div class="hero-img"></div>
     <div class="content-wrap">
       <div class="content-inner">
-        <header class="logo-bar">
-          <img src="./images/logo.svg" />
-        </header>
+        <div class="logo-bar">
+          <img src="./images/logo.svg" alt="logo" />
+        </div>
         <h1 class="heading"><span class="heading-accent">We're</span><br />coming<br />soon</h1>
 
         <div class="intro-text">Hello fellow shoppers! We're currently building our new fashion store. 
@@ -28,8 +28,8 @@
 
         <form class="sign-up">
           <input type="text" placeholder="Email Address" id="input" onClick="removeElement()" />
-          <button type="submit" onClick="checkEmail(event)">
-            <img src="./images/icon-arrow.svg" />
+          <button type="submit" onClick="checkEmail(event)" aria-label="submit" >
+            <img src="./images/icon-arrow.svg" alt="arrow" />
           </button>
         </form>
       </div>
